@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const VERSION = require("./package.json").version;
 const LIB_DIR = path.join(__dirname, "lib");
-const URL = `https://github.com/C04-wq/opencode-termux/releases/download/v${VERSION}/opencode-termux-aarch64.tar.gz`;
+const URL = `https://github.com/XxUs3rZer0xX/opencode-termux/releases/download/v${VERSION}/opencode-termux-aarch64.tar.gz`;
 if (process.arch !== "arm64") { console.error("Error: aarch64 only."); process.exit(1); }
 if (fs.existsSync(path.join(LIB_DIR, "opencode"))) return;
 fs.mkdirSync(LIB_DIR, { recursive: true });
